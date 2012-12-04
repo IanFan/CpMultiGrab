@@ -138,7 +138,7 @@
 #pragma mark Init
 
 /*
- Target: Set ChipmunkMultiGrab to grab Chipmunk objects in Space.
+ Target: Set ChipmunkMultiGrab for grabbgin Chipmunk objects in Space.
  1. set Chipmunk Space, DebugLayer and updateStep as usual.
  2. set ChipmunkMultiGrab and touch event.
  3. set [glView setMultipleTouchEnabled:YES] in AppDelegate.m and set self.isTouchEnabled = YES in this scene
