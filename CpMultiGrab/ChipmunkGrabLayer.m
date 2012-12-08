@@ -24,8 +24,7 @@
 #pragma mark -
 #pragma mark Touch Event
 
--(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
-{
+-(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
   for(UITouch *touch in touches){
     CGPoint point = [touch locationInView:[touch view]];
     point = [[CCDirector sharedDirector]convertToGL:point];
@@ -33,8 +32,7 @@
   }
 }
 
--(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
-{
+-(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
   for(UITouch *touch in touches){
     CGPoint point = [touch locationInView:[touch view]];
     point = [[CCDirector sharedDirector]convertToGL:point];
@@ -42,8 +40,7 @@
   }
 }
 
--(void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
-{
+-(void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	for(UITouch *touch in touches){
     CGPoint point = [touch locationInView:[touch view]];
     point = [[CCDirector sharedDirector]convertToGL:point];
